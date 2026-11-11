@@ -1,0 +1,20 @@
+{
+  "name": "chiikawa-pets",
+  "interface": {
+    "displayName": "Chiikawa Pets"
+  },
+  "plugins": [
+    {
+      "name": "chiikawa-pet-installer",
+      "source": {
+        "source": "local",
+        "path": "./plugins/chiikawa-pet-installer"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
