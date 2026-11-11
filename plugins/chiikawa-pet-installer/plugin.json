@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "chiikawa-pet-installer",
+  "version": "0.1.0",
+  "description": "Install the bundled animated Chiikawa pet into an eligible ChatGPT Pets library.",
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/install-chiikawa/SKILL.md",
+      "interface": {
+        "displayName": "Chiikawa Pet Installer",
+        "shortDescription": "치이카와 펫 설치",
+        "longDescription": "검증된 치이카와 애니메이션 스프라이트 시트를 사용자의 ChatGPT Pets 라이브러리에 추가하고 활성 펫으로 선택합니다.",
+        "category": "Productivity",
+        "capabilities": ["Write"],
+        "defaultPrompt": ["번들된 치이카와 펫을 설치하고 선택해줘."],
+        "logo": "./assets/icon.png",
+        "composerIcon": "./assets/icon.png"
+      }
+    }
+  }
+}
